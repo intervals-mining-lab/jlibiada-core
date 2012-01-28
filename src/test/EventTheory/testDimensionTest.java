@@ -1,8 +1,7 @@
 package test.EventTheory;
 
 import junit.framework.TestCase;
-import libiada.EventTheory.Dimension;
-import org.junit.Test;
+import main.EventTheory.Dimension;
 
 /**
  * Created by IntelliJ IDEA.
@@ -11,7 +10,6 @@ import org.junit.Test;
  * Time: 23:43:24
  */
 public class testDimensionTest extends TestCase {
-    @Test
     public void testEquals()
     {
         Dimension d1 = new Dimension(0, 10);
@@ -22,7 +20,6 @@ public class testDimensionTest extends TestCase {
         assertTrue(d1.equalsAsDimension(d1));
     }
 
-    @Test
     public void testConstructor()
     {
         Dimension d1 = new Dimension(-120, 50);
@@ -33,7 +30,6 @@ public class testDimensionTest extends TestCase {
         assertFalse(d1.equalsAsDimension(d2));
     }
 
-    @Test
     public void testCom()
     {
         Dimension d = new Dimension(0, 12);
@@ -42,7 +38,6 @@ public class testDimensionTest extends TestCase {
         assertFalse(d.equalsAsDimension(new Dimension(-10, -3)));
     }
 
-    @Test
     public void testMaxMin()
     {
         Dimension d = new Dimension(-155, 15);
@@ -50,14 +45,12 @@ public class testDimensionTest extends TestCase {
         assertEquals(d.getMin(), -155);
     }
 
-    @Test
     public void testLength()
     {
         Dimension d = new Dimension(-155, 15);
         assertEquals(d.getLength(), (d.getMax() - d.getMin() + 1));
     }
 
-    @Test
     public void testClone()
     {
         Dimension d = new Dimension(0, 10);

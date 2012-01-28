@@ -1,12 +1,10 @@
 package test;
 
-import libiada.IntervalAnalysis.Chain;
-import libiada.IntervalAnalysis.ChainWithCharacteristic;
-import libiada.IntervalAnalysis.UniformChain;
-import libiada.Root.SimpleTypes.ValueChar;
-import org.junit.Before;
-import org.junit.Test;
 import junit.framework.TestCase;
+import main.IntervalAnalysis.Chain;
+import main.IntervalAnalysis.ChainWithCharacteristic;
+import main.IntervalAnalysis.UniformChain;
+import main.Root.SimpleTypes.ValueChar;
 
 /**
  * Created by IntelliJ IDEA.
@@ -18,12 +16,10 @@ import junit.framework.TestCase;
 public class testChainTest extends TestCase {
     private Chain chainBase;
 
-    @Before
     public void setUp() throws Exception {
         chainBase = new Chain(10);
     }
 
-    @Test
     public void testSimularChainsGet() throws Exception {
         ValueChar MessageA = new ValueChar('a');
         ValueChar MessageC = new ValueChar('c');

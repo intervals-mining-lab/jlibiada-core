@@ -1,9 +1,8 @@
 package test.EventTheory;
 
 import junit.framework.TestCase;
-import libiada.EventTheory.Dimension;
-import libiada.EventTheory.Place;
-import org.junit.Test;
+import main.EventTheory.Dimension;
+import main.EventTheory.Place;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import java.util.ArrayList;
  * Time: 0:27:58
  */
 public class testPlaceTest extends TestCase {
-    @Test
     public void testConstructorNull()
     {
         try
@@ -28,7 +26,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testConstructorFreeSpace()
     {
         try
@@ -41,7 +38,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testConstructorBrokenSpace()
     {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
@@ -60,7 +56,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testConstructorFirstDimensionLess() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(-50, -48));
@@ -70,7 +65,6 @@ public class testPlaceTest extends TestCase {
         assertTrue((Ar.get(1)).equalsAsDimension((Dimension)pl.getDimension().get(1)));
     }
 
-    @Test
     public void testConstructorSecondDimensionLess() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(-50, 150));
@@ -80,7 +74,6 @@ public class testPlaceTest extends TestCase {
         assertTrue((Ar.get(1)).equalsAsDimension((Dimension)pl.getDimension().get(1)));
     }
 
-    @Test
     public void testConstructorDimensionsEquals() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 150));
@@ -90,7 +83,6 @@ public class testPlaceTest extends TestCase {
         assertTrue((Ar.get(1)).equalsAsDimension((Dimension)pl.getDimension().get(1)));
     }
 
-    @Test
     public void testConstructorNotAllAreDimension()
     {
         ArrayList Ar = new ArrayList();
@@ -112,7 +104,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testtestChangeSpaceAfterCreateSpace() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 150));
@@ -124,7 +115,6 @@ public class testPlaceTest extends TestCase {
         assertEquals(1, Array.getLength(Pl.getValues()));
     }
 
-    @Test
     public void testSetValueIndexGreateThanMax() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));
@@ -140,7 +130,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testSetValueIndexLessThanZero() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));
@@ -156,7 +145,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testSetValueLessThanMin() throws Exception {
         ArrayList Ar = new ArrayList();
         Ar.add(new Dimension(0, 10));
@@ -172,7 +160,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testSetValueGreateThanMax() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));
@@ -189,7 +176,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testSetValueEqualsMax() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));
@@ -204,7 +190,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void testSetValueEqualsMin() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));
@@ -219,7 +204,6 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    @Test
     public void TestSetValueInWorkMode() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));

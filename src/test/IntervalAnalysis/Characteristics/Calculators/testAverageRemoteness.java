@@ -1,13 +1,11 @@
 package test.IntervalAnalysis.Characteristics.Calculators;
 
 import junit.framework.TestCase;
-import libiada.IntervalAnalysis.Chain;
-import libiada.IntervalAnalysis.Characteristics.Calculators.AverageRemoteness;
-import libiada.IntervalAnalysis.Characteristics.Characteristic;
-import libiada.IntervalAnalysis.LinkUp;
-import libiada.IntervalAnalysis.UniformChain;
-import org.junit.Before;
-import org.junit.Test;
+import main.IntervalAnalysis.Chain;
+import main.IntervalAnalysis.Characteristics.Calculators.AverageRemoteness;
+import main.IntervalAnalysis.Characteristics.Characteristic;
+import main.IntervalAnalysis.LinkUp;
+import main.IntervalAnalysis.UniformChain;
 
 /**
  * Created by IntelliJ IDEA.
@@ -20,14 +18,12 @@ public class testAverageRemoteness extends TestCase {
     private Chain TestChain;
     private UniformChain TestUChain;
 
-    @Before
     public void setUp() throws Exception {
         ObjectMother Mother =  new ObjectMother();
         TestChain = Mother.getChain();
         TestUChain = Mother.getUniformChain();
     }
 
-    @Test
     public void testCalculation() throws Exception {
         Characteristic ARemoteness = new Characteristic(new AverageRemoteness());
 
@@ -53,7 +49,6 @@ public class testAverageRemoteness extends TestCase {
         assertEquals(pAverageRemoteness, ARemoteness.value(TestUChain, LinkUp.Both));
     }
 
-    @Test
     public void testCalculationForChain() throws Exception {
         Characteristic ARemoteness = new Characteristic(new AverageRemoteness());
 

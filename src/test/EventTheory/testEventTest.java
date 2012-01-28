@@ -1,13 +1,11 @@
 package test.EventTheory;
 
 import junit.framework.TestCase;
-import libiada.EventTheory.Dimension;
-import libiada.EventTheory.Event;
-import libiada.EventTheory.Place;
-import libiada.EventTheory.ReadRule;
-import libiada.Root.SimpleTypes.ValueInt;
-import org.junit.Before;
-import org.junit.Test;
+import main.EventTheory.Dimension;
+import main.EventTheory.Event;
+import main.EventTheory.Place;
+import main.EventTheory.ReadRule;
+import main.Root.SimpleTypes.ValueInt;
 
 import java.lang.reflect.Array;
 
@@ -23,7 +21,6 @@ public class testEventTest extends TestCase {
     private Place value = null;
 
 
-    @Before
     public void setUp() throws Exception {
         baseEvent = new Event();
         baseEvent.addDimension(new Dimension(0, 10));
@@ -32,7 +29,6 @@ public class testEventTest extends TestCase {
         value = baseEvent.getPlacePattern();
     }
 
-    @Test
     public void testAddToRuleSelf()
     {
         try
@@ -48,7 +44,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void testAddToRuleInWorkMode() throws Exception {
         key.setValues(new long[] {1, 1});
         value.setValues(new long[] {0, 1});
@@ -57,7 +52,6 @@ public class testEventTest extends TestCase {
         assertEquals(baseEvent.getFromReadRule(key).getValue(0), value);
     }
 
-    @Test
     public void testAddToRuleNullValue() throws Exception {
         try {
             key.setValues(new long[] {1, 1});
@@ -69,7 +63,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void TestAddToRuleNullKey() throws Exception {
         try {
             value.setValues(new long[] {1, 1});
@@ -81,7 +74,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void testAddToRuleSame() throws Exception {
         key.setValues(new long[] {1, 1});
         value.setValues(new long[] {0, 1});
@@ -92,7 +84,6 @@ public class testEventTest extends TestCase {
         assertEquals(baseEvent.getFromReadRule(key).getValue(0), value);
     }
 
-    @Test
     public void testRemoveFromNull()
     {
         try {
@@ -104,7 +95,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void testRemovFromInWorkMode() throws Exception {
         key.setValues(new long[] {1, 1});
         value.setValues(new long[] {0, 1});
@@ -114,7 +104,6 @@ public class testEventTest extends TestCase {
         assertNull(baseEvent.getFromReadRule(key));
     }
 
-    @Test
     public void testRemoveFromWrongPlace() throws Exception {
         try {
             baseEvent.addDimension(new Dimension(0, 10));
@@ -132,7 +121,6 @@ public class testEventTest extends TestCase {
     }
 
 
-    @Test
     public void testGetFromRuleInWorkMode() throws Exception {
         ReadRule gFor = new ReadRule(baseEvent.getPlacePattern());
         Place pl = baseEvent.getPlacePattern().setValues(new long[] {0, 1});
@@ -142,7 +130,6 @@ public class testEventTest extends TestCase {
         assertEquals(gFor, gAfter);
     }
 
-    @Test
     public void TestGetFromRuleNUll() throws Exception {
         try
         {
@@ -155,7 +142,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void testAddRuleInWorkMode() throws Exception {
         ReadRule rr = new ReadRule(baseEvent.getPlacePattern());
         key.setValues(new long[] {1, 1});
@@ -170,7 +156,6 @@ public class testEventTest extends TestCase {
         assertEquals(baseEvent.getFromReadRule(key), rr);
     }
 
-    @Test
     public void testAddRuleNullValue()
     {
         try
@@ -185,7 +170,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void TestAddRuleNullKey()
     {
         try {
@@ -203,7 +187,6 @@ public class testEventTest extends TestCase {
         fail();
     }
 
-    @Test
     public void testAddRuleTwice() throws Exception {
         ReadRule rr = new ReadRule(baseEvent.getPlacePattern());
         ReadRule rr2 = new ReadRule(baseEvent.getPlacePattern());
@@ -238,7 +221,6 @@ public class testEventTest extends TestCase {
         assertNotNull(baseEvent.getFromReadRule(key).getValue(1));
     }
 
-    @Test
     public void testReadRuleCount() throws Exception {
         key.setValues(new long[] {1, 1});
         value.setValues(new long[] {0, 1});
@@ -251,7 +233,6 @@ public class testEventTest extends TestCase {
         assertEquals(2, baseEvent.getReadRuleCount());
     }
 
-    @Test
     public void testEquals() throws Exception {
         Event Event2 = new Event();
         Event2.addDimension(new Dimension(0, 10));
@@ -292,7 +273,6 @@ public class testEventTest extends TestCase {
         assertTrue(baseEvent.Equals(Event2));
     }
 
-    @Test
     public void testEqualsFalse() throws Exception {
         Event Event2 = new Event();
         Event2.addDimension(new Dimension(0, 10));
@@ -326,8 +306,6 @@ public class testEventTest extends TestCase {
         assertFalse(baseEvent.Equals(Event2));
     }
 
-
-    @Test
     public void testEqualsNull() throws Exception {
         key.setValues(new long[] {1, 1});
 
@@ -345,7 +323,6 @@ public class testEventTest extends TestCase {
         assertFalse(baseEvent.Equals(null));
     }
 
-    @Test
     public void testClone() throws Exception {
         key.setValues(new long[] {1, 1});
 

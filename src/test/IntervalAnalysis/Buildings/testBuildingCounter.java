@@ -5,11 +5,11 @@
 //import org.junit.Test;
 //
 ///**
-// * Created by IntelliJ IDEA.
-// * User: Alex
-// * Date: 20.03.11
-// * Time: 22:30
-// */
+//* Created by IntelliJ IDEA.
+//* User: Alex
+//* Date: 20.03.11
+//* Time: 22:30
+//*/
 //public class testBuildingCounter extends TestCase {
 //    @Test
 //    public void testCounterWithL1M1() throws Exception {

@@ -80,6 +80,6 @@
     </target>
     
     <target name="jar-make" depends="test-basic">
-	<jar destfile="dist/core.jar" basedir="${build.main}"/>
+	    <jar destfile="dist/core.jar" basedir="${build.main}"/>
     </target>
 </project>

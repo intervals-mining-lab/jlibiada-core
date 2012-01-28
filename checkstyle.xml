@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="jlibiada-core-fast" default="run">
+<project name="jlibiada-core" default="run">
     <property name="build" value="build"/>
     <property name="build.main" value="${build}/main"/>
     <property name="build.test" value="${build}/test"/>

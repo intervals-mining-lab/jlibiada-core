@@ -36,7 +36,7 @@ public class Place implements IBaseObject
                         throw  new Exception("?????? ??????. ????? ????????????");
                     }
                     pValues.add(dimensions.get(i).getMin());
-                    pDimensions.add(dimensions.get(i).Clone());
+                    pDimensions.add(dimensions.get(i).clone());
                 }
             }
     }
@@ -77,11 +77,13 @@ public class Place implements IBaseObject
         return this;
     }
 
-    public IBaseObject Clone() {
+    @Override
+    public IBaseObject clone() {
         return null;  //TODO: "????????? ?????"
     }
 
-    public boolean Equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
     }
 

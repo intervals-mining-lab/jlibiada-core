@@ -18,11 +18,13 @@ public class Event extends Space implements IBaseObject {
         super.addDimension(dimension);
     }
 
-    public IBaseObject Clone() {
+    @Override
+    public IBaseObject clone() {
         return null;  //TODO: "Заполнить метод"
     }
 
-    public boolean Equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
         return false;  //TODO: "Заполнить метод"
     }
 

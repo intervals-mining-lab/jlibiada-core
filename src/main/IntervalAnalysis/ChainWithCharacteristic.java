@@ -38,17 +38,17 @@ public abstract class ChainWithCharacteristic extends BaseChain implements IData
 
     public FrequencyList getCommonIntervals() throws Exception {
         buildIntervals();
-        return (FrequencyList) pIntervals.Clone();
+        return (FrequencyList) pIntervals.clone();
     }
 
     public FrequencyList getStartInterval() throws Exception {
         buildIntervals();
-        return (FrequencyList) startinterval.Clone();
+        return (FrequencyList) startinterval.clone();
     }
 
     public FrequencyList getEndInterval() throws Exception {
         buildIntervals();
-        return (FrequencyList) endinterval.Clone();
+        return (FrequencyList) endinterval.clone();
     }
 
     protected abstract void buildIntervals() throws Exception;

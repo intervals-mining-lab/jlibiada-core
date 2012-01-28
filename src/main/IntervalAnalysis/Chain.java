@@ -58,7 +58,7 @@ public class Chain extends ChainWithCharacteristic implements IChainDataForCalcu
 
     private boolean isNewMessage(IBaseObject message) {
         for (UniformChain chain : pUniformChains) {
-            if (chain.getMessage().Equals(message)) {
+            if (chain.getMessage().equals(message)) {
                 return false;
             }
         }

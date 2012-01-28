@@ -38,11 +38,13 @@ public class DictionaryEntryBase implements IBaseObject {
         this.value = value;
     }
 
-    public IBaseObject Clone() {
+    @Override
+    public IBaseObject clone() {
         return null;  //TODO: "????????? ?????"
     }
 
-    public boolean Equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
     }
 

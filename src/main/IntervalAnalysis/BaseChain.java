@@ -4,7 +4,6 @@ import main.EventTheory.Dimension;
 import main.EventTheory.Space;
 import main.Root.IBaseObject;
 import main.Root.IBin;
-import main.Root.SimpleTypes.ValueChar;
 
 /**
  * Created by IntelliJ IDEA.
@@ -52,11 +51,11 @@ public class BaseChain extends Space implements IBaseObject {
         return getPlaceCount();
     }
 
-    public IBaseObject Clone() {
+    public IBaseObject clone() {
         return null;  //TODO: "????????? ?????"
     }
 
-    public boolean Equals(Object obj) {
+    public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
     }
 

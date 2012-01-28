@@ -16,11 +16,13 @@ public class PsevdoValue implements IBaseObject {
         return singletone;
     }
 
-    public IBaseObject Clone() {
+    @Override
+    public IBaseObject clone() {
         return Instance();
     }
 
-    public boolean Equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
         return this.getClass() == obj.getClass();
     }
 

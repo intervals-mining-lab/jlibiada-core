@@ -21,7 +21,7 @@ public class UniformChain extends ChainWithCharacteristic implements IBaseObject
 
     public void addItem(IBaseObject what, Place where) throws Exception
     {
-        if (getMessage().Equals(what))
+        if (getMessage().equals(what))
         {
             super.addItem(what, where);            
         }

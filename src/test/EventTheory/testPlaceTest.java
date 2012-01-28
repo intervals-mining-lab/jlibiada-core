@@ -204,7 +204,7 @@ public class testPlaceTest extends TestCase {
         }
     }
 
-    public void TestSetValueInWorkMode() throws Exception {
+    public void testSetValueInWorkMode() throws Exception {
         ArrayList<Dimension> Ar = new ArrayList<Dimension>();
         Ar.add(new Dimension(0, 10));
         Place Pl = new Place(Ar);

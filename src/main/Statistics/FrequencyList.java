@@ -19,17 +19,19 @@ public class FrequencyList extends Alphabet implements IBaseObject {
     @Override
     public IBaseObject get(int index)
     {
-        return new DictionaryEntryBase(((IBaseObject) vault.get(index)).Clone(), new ValueInt(pFrequency.get(index)));
+        return new DictionaryEntryBase(((IBaseObject) vault.get(index)).clone(), new ValueInt(pFrequency.get(index)));
     }
 
-    public IBaseObject Clone() {
+    @Override
+    public IBaseObject clone() {
         FrequencyList frecList = new FrequencyList();
         frecList.pFrequency = (ArrayList<Long>) this.pFrequency.clone();
         frecList.vault = (ArrayList) this.vault.clone();
         return frecList;  //TODO: "????????? ?????"
     }
 
-    public boolean Equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
     }
 

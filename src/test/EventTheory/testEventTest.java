@@ -228,7 +228,7 @@ public class testEventTest extends TestCase {
 
         key.setValues(new long[] {4, 6});
         value.setValues(new long[] {5, 6});
-        baseEvent.addToReadRule((Place) key.Clone(), value);
+        baseEvent.addToReadRule((Place) key.clone(), value);
 
         assertEquals(2, baseEvent.getReadRuleCount());
     }
@@ -270,7 +270,7 @@ public class testEventTest extends TestCase {
         Event2.addToReadRule(Key2, Value2);
 
 
-        assertTrue(baseEvent.Equals(Event2));
+        assertTrue(baseEvent.equals(Event2));
     }
 
     public void testEqualsFalse() throws Exception {
@@ -303,7 +303,7 @@ public class testEventTest extends TestCase {
         Value2.setValues(new long[] {1, 0});
         Event2.addToReadRule(Key2, Value2);
 
-        assertFalse(baseEvent.Equals(Event2));
+        assertFalse(baseEvent.equals(Event2));
     }
 
     public void testEqualsNull() throws Exception {
@@ -320,7 +320,7 @@ public class testEventTest extends TestCase {
         value.setValues(new long[] {4, 2});
         baseEvent.addToReadRule(key, value);
 
-        assertFalse(baseEvent.Equals(null));
+        assertFalse(baseEvent.equals(null));
     }
 
     public void testClone() throws Exception {
@@ -338,7 +338,7 @@ public class testEventTest extends TestCase {
         value.setValues(new long[] {4, 2});
         baseEvent.addToReadRule(key, value);
 
-        Event ItsClone = (Event) baseEvent.Clone();
+        Event ItsClone = (Event) baseEvent.clone();
         assertEquals(baseEvent, ItsClone);
     }
 }

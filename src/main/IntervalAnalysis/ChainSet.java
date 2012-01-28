@@ -15,12 +15,12 @@ public class ChainSet implements IBaseObject {
     protected ArrayList<ChainWithCharacteristic> chains = new ArrayList();
 
     @Override
-    public IBaseObject Clone() {
+    public IBaseObject clone() {
         return null;  //TODO: "Заполнить метод"
     }
 
     @Override
-    public boolean Equals(Object obj) {
+    public boolean equals(Object obj) {
         return false;  //TODO: "Заполнить метод"
     }
 

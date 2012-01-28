@@ -69,11 +69,11 @@ public class Dimension implements IBaseObject {
         return (int) (pmax - pmin) + dt;
     }
 
-    public IBaseObject Clone() {
+    public IBaseObject clone() {
         return new Dimension(pmin, pmax);
     }
 
-    public boolean Equals(Object obj) {
+    public boolean equals(Object obj) {
             if (this == obj)
             {
                 return true;

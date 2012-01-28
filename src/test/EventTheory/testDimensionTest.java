@@ -54,7 +54,7 @@ public class testDimensionTest extends TestCase {
     public void testClone()
     {
         Dimension d = new Dimension(0, 10);
-        Dimension d_clone = (Dimension)d.Clone();
+        Dimension d_clone = (Dimension)d.clone();
         assertNotSame(d_clone, d);
         assertTrue(d.equalsAsDimension(d_clone));
     }

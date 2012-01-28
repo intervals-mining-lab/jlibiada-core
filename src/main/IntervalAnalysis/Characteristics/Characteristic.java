@@ -26,7 +26,7 @@ public class Characteristic {
     }
 
     public double value(UniformChain Chain, LinkUp link) throws Exception {
-        if (!Calculated || !Chain.Equals(pChain))
+        if (!Calculated || !Chain.equals(pChain))
         {
             pChain = Chain;
             pStartValue = Calculator.calculate(Chain, LinkUp.Start);
@@ -39,7 +39,7 @@ public class Characteristic {
     }
 
     public double value(Chain Chain, LinkUp link) throws Exception {
-        if (!Calculated || !Chain.Equals(pChain))
+        if (!Calculated || !Chain.equals(pChain))
         {
             pChain = Chain;
             pStartValue = Calculator.calculate(Chain, LinkUp.Start);

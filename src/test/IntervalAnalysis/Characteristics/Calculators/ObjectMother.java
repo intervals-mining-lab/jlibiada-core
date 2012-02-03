@@ -1,8 +1,8 @@
 package test.IntervalAnalysis.Characteristics.Calculators;
 
-import main.IntervalAnalysis.Chain;
-import main.IntervalAnalysis.UniformChain;
-import main.Root.SimpleTypes.ValueChar;
+import IntervalAnalysis.Chain;
+import IntervalAnalysis.UniformChain;
+import Root.SimpleTypes.ValueChar;
 
 /**
  * Created by IntelliJ IDEA.

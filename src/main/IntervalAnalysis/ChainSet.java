@@ -1,7 +1,6 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
-import main.Root.IBaseObject;
-import main.Root.IBin;
+import Root.BaseObject;
 
 import java.util.ArrayList;
 
@@ -11,11 +10,11 @@ import java.util.ArrayList;
  * Date: 24.05.11
  * Time: 19:47
  */
-public class ChainSet implements IBaseObject {
+public class ChainSet extends BaseObject {
     protected ArrayList<ChainWithCharacteristic> chains = new ArrayList();
 
     @Override
-    public IBaseObject clone() {
+    public BaseObject clone() {
         return null;  //TODO: "Заполнить метод"
     }
 
@@ -25,8 +24,13 @@ public class ChainSet implements IBaseObject {
     }
 
     @Override
-    public IBin GetBin() {
-        return null;  //TODO: "Заполнить метод"
+    public String toString() {
+        return null;  //TODO:"Заполни метод!"
+    }
+
+    @Override
+    public int compareTo(BaseObject object) {
+        return 0;  //TODO:"Заполни метод!"
     }
 
     public void add(ChainWithCharacteristic ch) {

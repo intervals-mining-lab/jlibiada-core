@@ -1,6 +1,6 @@
-package main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces;
+package IntervalAnalysis.Characteristics.AuxiliaryInterfaces;
 
-import main.IntervalAnalysis.UniformChain;
+import IntervalAnalysis.UniformChain;
 
 /**
  * Created by IntelliJ IDEA.

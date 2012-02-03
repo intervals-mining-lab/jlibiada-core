@@ -1,7 +1,7 @@
-package main.EventTheory;
+package EventTheory;
 
-import main.Root.IBaseObject;
-import main.Root.IBin;
+import Root.BaseObject;
+import Root.IBin;
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,7 +9,7 @@ import main.Root.IBin;
  * Date: 23.01.2011
  * Time: 17:13:20
  */
-public class PsevdoValue implements IBaseObject {
+public class PsevdoValue extends BaseObject {
     private static PsevdoValue singletone = new PsevdoValue();
     
     public static PsevdoValue Instance() {
@@ -17,7 +17,7 @@ public class PsevdoValue implements IBaseObject {
     }
 
     @Override
-    public IBaseObject clone() {
+    public BaseObject clone() {
         return Instance();
     }
 
@@ -35,5 +35,10 @@ public class PsevdoValue implements IBaseObject {
         String s = "";
         s += '-';
         return s;
+    }
+
+    @Override
+    public int compareTo(BaseObject object) {
+        return 0;  //TODO:"Заполни метод!"
     }
 }

@@ -1,6 +1,6 @@
-package main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces;
+package IntervalAnalysis.Characteristics.AuxiliaryInterfaces;
 
-import main.Statistics.FrequencyList;
+import Statistics.FrequencyList;
 
 /**
  * Created by IntelliJ IDEA.

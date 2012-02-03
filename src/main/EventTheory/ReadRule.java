@@ -1,6 +1,6 @@
-package main.EventTheory;
+package EventTheory;
 
-import main.Root.IBaseObject;
+import Root.BaseObject;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ public class ReadRule {
     public ReadRule(Place place) {
     }
 
-    public IBaseObject getValue(int i) {
+    public BaseObject getValue(int i) {
         return null;
     }
 

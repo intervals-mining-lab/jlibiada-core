@@ -1,7 +1,6 @@
-package main.EventTheory;
+package EventTheory;
 
-import main.Root.IBaseObject;
-import main.Root.IBin;
+import Root.BaseObject;
 
 /**
  * Created by IntelliJ IDEA.
@@ -11,7 +10,7 @@ import main.Root.IBin;
  * To change this template use File | Settings | File Templates.
  */
 
-public class Dimension implements IBaseObject {
+public class Dimension extends BaseObject {
     private long pmin;
     private long pmax;
     
@@ -29,11 +28,6 @@ public class Dimension implements IBaseObject {
                 pmin = max;
                 pmax = min;
             }
-    }
-
-    public Dimension(DimensionBin bin) {
-        pmin = bin.getMin();
-        pmax = bin.getMax();
     }
 
     public boolean equalsAsDimension(Dimension obj) {
@@ -69,7 +63,7 @@ public class Dimension implements IBaseObject {
         return (int) (pmax - pmin) + dt;
     }
 
-    public IBaseObject clone() {
+    public BaseObject clone() {
         return new Dimension(pmin, pmax);
     }
 
@@ -81,10 +75,13 @@ public class Dimension implements IBaseObject {
             return false;
     }
 
-    public IBin GetBin() {
-            DimensionBin Temp = new DimensionBin();
-            Temp.setMin(pmin);
-            Temp.setMax(pmax);
-            return Temp;
+    @Override
+    public String toString() {
+        return null;  //TODO:"Заполни метод!"
+    }
+
+    @Override
+    public int compareTo(BaseObject object) {
+        return 0;  //TODO:"Заполни метод!"
     }
 }

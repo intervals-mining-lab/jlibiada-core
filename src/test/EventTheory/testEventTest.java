@@ -1,11 +1,11 @@
 package test.EventTheory;
 
 import junit.framework.TestCase;
-import main.EventTheory.Dimension;
-import main.EventTheory.Event;
-import main.EventTheory.Place;
-import main.EventTheory.ReadRule;
-import main.Root.SimpleTypes.ValueInt;
+import EventTheory.Dimension;
+import EventTheory.Event;
+import EventTheory.Place;
+import EventTheory.ReadRule;
+import Root.SimpleTypes.ValueInt;
 
 import java.lang.reflect.Array;
 

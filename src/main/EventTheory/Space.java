@@ -1,7 +1,7 @@
-package main.EventTheory;
+package EventTheory;
 
-import main.Root.IBaseObject;
-import main.TheoryOfSet.Alphabet;
+import Root.BaseObject;
+import TheoryOfSet.Alphabet;
 
 import java.util.ArrayList;
 
@@ -21,7 +21,7 @@ public class Space {
         pAlphabet.add(PsevdoValue.Instance());
     }
 
-    public void addItem(IBaseObject value, Place place) throws Exception {
+    public void addItem(BaseObject value, Place place) throws Exception {
         if (value == null)
         {
             throw new Exception("??????? ???????? ??????? ?????? ? ????????????");

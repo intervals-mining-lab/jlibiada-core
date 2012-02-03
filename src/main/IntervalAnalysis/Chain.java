@@ -1,12 +1,12 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
-import main.EventTheory.Place;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IChainDataForCalculator;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IDataForCalculator;
-import main.IntervalAnalysis.Characteristics.Characteristic;
-import main.Root.IBaseObject;
-import main.Root.SimpleTypes.ValueChar;
+import EventTheory.Place;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IChainDataForCalculator;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IDataForCalculator;
+import IntervalAnalysis.Characteristics.Characteristic;
+import Root.BaseObject;
+import Root.SimpleTypes.ValueChar;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * Date: 11.12.2010
  * Time: 1:18:31
  */
-public class Chain extends ChainWithCharacteristic implements IChainDataForCalculator, IBaseObject {
+public class Chain extends ChainWithCharacteristic implements IChainDataForCalculator {
     protected ArrayList<UniformChain> pUniformChains = new ArrayList<UniformChain>();
 
     public Chain(int length) throws Exception {
@@ -42,7 +42,7 @@ public class Chain extends ChainWithCharacteristic implements IChainDataForCalcu
         pUniformChains = new ArrayList();
     }
 
-    public void addItem(IBaseObject what, Place where) throws Exception
+    public void addItem(BaseObject what, Place where) throws Exception
     {
         super.addItem(what, where);
 //        if (pUniformChains.size() != getAlpahbet().getPower())
@@ -56,7 +56,7 @@ public class Chain extends ChainWithCharacteristic implements IChainDataForCalcu
         }
     }
 
-    private boolean isNewMessage(IBaseObject message) {
+    private boolean isNewMessage(BaseObject message) {
         for (UniformChain chain : pUniformChains) {
             if (chain.getMessage().equals(message)) {
                 return false;
@@ -84,7 +84,7 @@ public class Chain extends ChainWithCharacteristic implements IChainDataForCalcu
         return ((Characteristic) CharacteristicSnapshot.get(calculatorClass)).value(this, link);
     }
 
-    public ChainWithCharacteristic getUniformChain(IBaseObject baseObject) {
+    public ChainWithCharacteristic getUniformChain(BaseObject baseObject) {
         return null;  //TODO:"Fill method"
     }
 

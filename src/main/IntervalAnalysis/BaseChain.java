@@ -1,9 +1,9 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
-import main.EventTheory.Dimension;
-import main.EventTheory.Space;
-import main.Root.IBaseObject;
-import main.Root.IBin;
+import EventTheory.Dimension;
+import EventTheory.Space;
+import Root.BaseObject;
+import Root.IBin;
 
 /**
  * Created by IntelliJ IDEA.
@@ -11,7 +11,7 @@ import main.Root.IBin;
  * Date: 11.12.2010
  * Time: 1:22:23
  */
-public class BaseChain extends Space implements IBaseObject {
+public class BaseChain extends Space {
     public BaseChain(int length) throws Exception {
         ClearAndSetNewLength(length);
     }
@@ -37,11 +37,11 @@ public class BaseChain extends Space implements IBaseObject {
         }
     }
 
-    public void add(IBaseObject baseObject, int index) throws Exception {
+    public void add(BaseObject baseObject, int index) throws Exception {
         addItem(baseObject, getPlacePattern().setValues(new long[] {index}));
     }
 
-    public IBaseObject get(int pos) {
+    public BaseObject get(int pos) {
         int index = vault.get(pos);
         return pAlphabet.get(index);
     }
@@ -51,7 +51,7 @@ public class BaseChain extends Space implements IBaseObject {
         return getPlaceCount();
     }
 
-    public IBaseObject clone() {
+    public BaseObject clone() {
         return null;  //TODO: "????????? ?????"
     }
 

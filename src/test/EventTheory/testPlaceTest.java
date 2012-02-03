@@ -1,8 +1,8 @@
 package test.EventTheory;
 
 import junit.framework.TestCase;
-import main.EventTheory.Dimension;
-import main.EventTheory.Place;
+import EventTheory.Dimension;
+import EventTheory.Place;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

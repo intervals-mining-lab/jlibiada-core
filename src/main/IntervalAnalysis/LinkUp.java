@@ -1,4 +1,4 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
 /**
  * Created by IntelliJ IDEA.

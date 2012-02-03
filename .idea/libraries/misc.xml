@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="misc">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/jlibiada-misc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/compile/jlibiada-misc-1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,7 +1,7 @@
 //package test.IntervalAnalysis.Buildings;
 //
 //import junit.framework.TestCase;
-//import main.IntervalAnalysis.Buildings.BuildingCounter;
+//import IntervalAnalysis.Buildings.BuildingCounter;
 //import org.junit.Test;
 //
 ///**

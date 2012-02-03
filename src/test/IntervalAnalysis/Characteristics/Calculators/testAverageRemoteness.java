@@ -1,11 +1,11 @@
 package test.IntervalAnalysis.Characteristics.Calculators;
 
 import junit.framework.TestCase;
-import main.IntervalAnalysis.Chain;
-import main.IntervalAnalysis.Characteristics.Calculators.AverageRemoteness;
-import main.IntervalAnalysis.Characteristics.Characteristic;
-import main.IntervalAnalysis.LinkUp;
-import main.IntervalAnalysis.UniformChain;
+import IntervalAnalysis.Chain;
+import IntervalAnalysis.Characteristics.Calculators.AverageRemoteness;
+import IntervalAnalysis.Characteristics.Characteristic;
+import IntervalAnalysis.LinkUp;
+import IntervalAnalysis.UniformChain;
 
 /**
  * Created by IntelliJ IDEA.

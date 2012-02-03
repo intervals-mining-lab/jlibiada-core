@@ -1,11 +1,11 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
-import main.EventTheory.Place;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IDataForCalculator;
-import main.IntervalAnalysis.Characteristics.Characteristic;
-import main.Root.IBaseObject;
-import main.Statistics.FrequencyList;
+import EventTheory.Place;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IDataForCalculator;
+import IntervalAnalysis.Characteristics.Characteristic;
+import Root.BaseObject;
+import Statistics.FrequencyList;
 
 import java.util.Hashtable;
 
@@ -15,7 +15,7 @@ import java.util.Hashtable;
  * Date: 11.12.2010
  * Time: 1:37:02
  */
-public abstract class ChainWithCharacteristic extends BaseChain implements IDataForCalculator, IBaseObject {
+public abstract class ChainWithCharacteristic extends BaseChain implements IDataForCalculator {
     protected Hashtable CharacteristicSnapshot;
     protected boolean IntervalsChanged;
     protected FrequencyList pIntervals;
@@ -64,7 +64,7 @@ public abstract class ChainWithCharacteristic extends BaseChain implements IData
 
     public abstract double injectIntoCharacteristic(Class<? extends ICharacteristicCalculator> calculatorClass, LinkUp link) throws Exception;
 
-    public void addItem(IBaseObject what, Place where) throws Exception
+    public void addItem(BaseObject what, Place where) throws Exception
     {
         super.addItem(what, where);
         markChanged();

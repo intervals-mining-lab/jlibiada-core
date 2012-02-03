@@ -1,11 +1,7 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
-import main.EventTheory.PsevdoValue;
-import main.Root.IBaseObject;
-import main.Root.SimpleTypes.ValueChar;
-import main.Root.SimpleTypes.ValueInt;
-
-import java.util.ArrayList;
+import EventTheory.PsevdoValue;
+import Root.SimpleTypes.ValueChar;
 
 /**
  * Created by IntelliJ IDEA.

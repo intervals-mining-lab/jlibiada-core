@@ -1,7 +1,7 @@
 package test.EventTheory;
 
 import junit.framework.TestCase;
-import main.EventTheory.Dimension;
+import EventTheory.Dimension;
 
 /**
  * Created by IntelliJ IDEA.

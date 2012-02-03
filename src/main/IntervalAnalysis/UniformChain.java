@@ -1,11 +1,11 @@
-package main.IntervalAnalysis;
+package IntervalAnalysis;
 
-import main.EventTheory.Place;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
-import main.IntervalAnalysis.Characteristics.Characteristic;
-import main.Root.IBaseObject;
-import main.Root.SimpleTypes.ValueInt;
-import main.Statistics.FrequencyList;
+import EventTheory.Place;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
+import IntervalAnalysis.Characteristics.Characteristic;
+import Root.BaseObject;
+import Root.SimpleTypes.ValueInt;
+import Statistics.FrequencyList;
 
 /**
  * Created by IntelliJ IDEA.
@@ -13,13 +13,13 @@ import main.Statistics.FrequencyList;
  * Date: 11.12.2010
  * Time: 1:39:23
  */
-public class UniformChain extends ChainWithCharacteristic implements IBaseObject {
-    public UniformChain(int length, IBaseObject message) throws Exception {
+public class UniformChain extends ChainWithCharacteristic {
+    public UniformChain(int length, BaseObject message) throws Exception {
         super(length);
         pAlphabet.add(message);
     }
 
-    public void addItem(IBaseObject what, Place where) throws Exception
+    public void addItem(BaseObject what, Place where) throws Exception
     {
         if (getMessage().equals(what))
         {
@@ -82,7 +82,7 @@ public class UniformChain extends ChainWithCharacteristic implements IBaseObject
         return ((Characteristic) CharacteristicSnapshot.get(calculatorClass)).value(this, link);
     }
 
-    public IBaseObject getMessage() {
+    public BaseObject getMessage() {
         return pAlphabet.get(1);
     }
 }

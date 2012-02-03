@@ -1,10 +1,10 @@
 package test.IntervalAnalysis;
 
 import junit.framework.TestCase;
-import main.IntervalAnalysis.Chain;
-import main.IntervalAnalysis.ChainWithCharacteristic;
-import main.IntervalAnalysis.UniformChain;
-import main.Root.SimpleTypes.ValueChar;
+import IntervalAnalysis.Chain;
+import IntervalAnalysis.ChainWithCharacteristic;
+import IntervalAnalysis.UniformChain;
+import Root.SimpleTypes.ValueChar;
 
 /**
  * Created by IntelliJ IDEA.

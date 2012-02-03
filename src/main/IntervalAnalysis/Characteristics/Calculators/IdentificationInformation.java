@@ -1,11 +1,11 @@
-package main.IntervalAnalysis.Characteristics.Calculators;
+package IntervalAnalysis.Characteristics.Calculators;
 
-import main.IntervalAnalysis.Chain;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IChainDataForCalculator;
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
-import main.IntervalAnalysis.Characteristics.CharacteristicsFactory;
-import main.IntervalAnalysis.LinkUp;
-import main.IntervalAnalysis.UniformChain;
+import IntervalAnalysis.Chain;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.IChainDataForCalculator;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
+import IntervalAnalysis.Characteristics.CharacteristicsFactory;
+import IntervalAnalysis.LinkUp;
+import IntervalAnalysis.UniformChain;
 
 /**
  * Created by IntelliJ IDEA.

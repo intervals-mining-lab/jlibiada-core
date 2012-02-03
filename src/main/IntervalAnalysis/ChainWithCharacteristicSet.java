@@ -1,7 +1,7 @@
-//package main.IntervalAnalysis;
+//package IntervalAnalysis;
 //
-//import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
-//import main.Statistics.Picks.Picks;
+//import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
+//import Statistics.Picks.Picks;
 //
 ///**
 // * Created by IntelliJ IDEA.

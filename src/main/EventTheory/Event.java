@@ -1,7 +1,6 @@
-package main.EventTheory;
+package EventTheory;
 
-import main.Root.IBin;
-import main.Root.IBaseObject;
+import Root.BaseObject;
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,7 +8,7 @@ import main.Root.IBaseObject;
  * Date: 30.11.2010
  * Time: 9:08:58
  */
-public class Event extends Space implements IBaseObject {
+public class Event extends Space {
     public Event() throws Exception {
         super();
     }
@@ -19,17 +18,13 @@ public class Event extends Space implements IBaseObject {
     }
 
     @Override
-    public IBaseObject clone() {
+    public Event clone() {
         return null;  //TODO: "Заполнить метод"
     }
 
     @Override
     public boolean equals(Object obj) {
         return false;  //TODO: "Заполнить метод"
-    }
-
-    public IBin GetBin() {
-        return null;  //TODO: "Заполнить метод"
     }
 
     public void addToReadRule(Place key, Place value) {
@@ -41,7 +36,7 @@ public class Event extends Space implements IBaseObject {
     public void removeFromReadRule(Place key) {
     }
 
-    public void addItem(IBaseObject value, Place key) {
+    public void addItem(BaseObject value, Place key) {
     }
 
     public void addToReadRule(Place value, ReadRule rule) {

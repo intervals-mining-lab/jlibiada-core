@@ -1,7 +1,8 @@
-package main.EventTheory;
+package EventTheory;
 
-import main.Root.IBin;
-import main.Root.IBaseObject;
+import Root.BaseObject;
+import Root.BaseObject;
+import Root.IBin;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -15,9 +16,8 @@ import java.util.ArrayList;
  *
  * @author Alex
  */
-public class Place implements IBaseObject
-{
-    private ArrayList<IBaseObject> pDimensions = new ArrayList<IBaseObject>();
+public class Place extends BaseObject {
+    private ArrayList<BaseObject> pDimensions = new ArrayList<BaseObject>();
     private ArrayList<Long> pValues = new ArrayList<Long>();
 
     public Place(ArrayList<Dimension> dimensions) throws Exception
@@ -41,11 +41,11 @@ public class Place implements IBaseObject
             }
     }
 
-    public ArrayList<IBaseObject> getDimension() {
+    public ArrayList<BaseObject> getDimension() {
         return pDimensions;
     }
 
-    public IBaseObject getDimension(int index) {
+    public BaseObject getDimension(int index) {
         return  pDimensions.get(index);
     }
 
@@ -78,13 +78,23 @@ public class Place implements IBaseObject
     }
 
     @Override
-    public IBaseObject clone() {
+    public BaseObject clone() {
         return null;  //TODO: "????????? ?????"
     }
 
     @Override
     public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
+    }
+
+    @Override
+    public String toString() {
+        return null;  //TODO:"Заполни метод!"
+    }
+
+    @Override
+    public int compareTo(BaseObject object) {
+        return 0;  //TODO:"Заполни метод!"
     }
 
     public IBin GetBin() {

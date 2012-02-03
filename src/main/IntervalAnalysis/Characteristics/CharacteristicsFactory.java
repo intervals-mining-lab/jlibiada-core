@@ -1,7 +1,7 @@
-package main.IntervalAnalysis.Characteristics;
+package IntervalAnalysis.Characteristics;
 
-import main.IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
-import main.IntervalAnalysis.Characteristics.Calculators.*;
+import IntervalAnalysis.Characteristics.AuxiliaryInterfaces.ICharacteristicCalculator;
+import IntervalAnalysis.Characteristics.Calculators.*;
 import sun.management.counter.Counter;
 
 /**

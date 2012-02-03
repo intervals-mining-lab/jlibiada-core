@@ -1,11 +1,8 @@
-package test.EventTheory;
+package EventTheory;
 
+import Root.BaseObject;
+import Root.SimpleTypes.ValueInt;
 import junit.framework.TestCase;
-import libiada.EventTheory.Dimension;
-import libiada.EventTheory.Event;
-import libiada.EventTheory.Place;
-import libiada.EventTheory.ReadRule;
-import libiada.Root.SimpleTypes.ValueInt;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -246,7 +243,7 @@ public class testEventTest extends TestCase {
 
         key.setValues(new long[] {4, 6});
         value.setValues(new long[] {5, 6});
-        baseEvent.addToReadRule((Place) key.Clone(), value);
+        baseEvent.addToReadRule((Place) key.clone(), value);
 
         assertEquals(2, baseEvent.getReadRuleCount());
     }
@@ -289,7 +286,7 @@ public class testEventTest extends TestCase {
         Event2.addToReadRule(Key2, Value2);
 
 
-        assertTrue(baseEvent.Equals(Event2));
+        assertTrue(baseEvent.equals(Event2));
     }
 
     @Test
@@ -323,7 +320,7 @@ public class testEventTest extends TestCase {
         Value2.setValues(new long[] {1, 0});
         Event2.addToReadRule(Key2, Value2);
 
-        assertFalse(baseEvent.Equals(Event2));
+        assertFalse(baseEvent.equals(Event2));
     }
 
 
@@ -342,7 +339,7 @@ public class testEventTest extends TestCase {
         value.setValues(new long[] {4, 2});
         baseEvent.addToReadRule(key, value);
 
-        assertFalse(baseEvent.Equals(null));
+        assertFalse(baseEvent.equals(null));
     }
 
     @Test
@@ -361,7 +358,7 @@ public class testEventTest extends TestCase {
         value.setValues(new long[] {4, 2});
         baseEvent.addToReadRule(key, value);
 
-        Event ItsClone = (Event) baseEvent.Clone();
+        BaseObject ItsClone = ((Event) baseEvent).clone();
         assertEquals(baseEvent, ItsClone);
     }
 }

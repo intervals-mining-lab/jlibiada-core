@@ -1,8 +1,8 @@
-package test.IntervalAnalysis.Characteristics.Calculators;
+package IntervalAnalysis.Characteristics.Calculators;
 
-import libiada.IntervalAnalysis.Chain;
-import libiada.IntervalAnalysis.UniformChain;
-import libiada.Root.SimpleTypes.ValueChar;
+import IntervalAnalysis.Chain;
+import IntervalAnalysis.UniformChain;
+import Root.SimpleTypes.ValueChar;
 
 /**
  * Created by IntelliJ IDEA.

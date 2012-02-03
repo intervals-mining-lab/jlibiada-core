@@ -1,11 +1,11 @@
-package test.IntervalAnalysis.Characteristics.Calculators;
+package IntervalAnalysis.Characteristics.Calculators;
 
 import junit.framework.TestCase;
-import libiada.IntervalAnalysis.Chain;
-import libiada.IntervalAnalysis.Characteristics.Calculators.AverageRemoteness;
-import libiada.IntervalAnalysis.Characteristics.Characteristic;
-import libiada.IntervalAnalysis.LinkUp;
-import libiada.IntervalAnalysis.UniformChain;
+import IntervalAnalysis.Chain;
+import IntervalAnalysis.Characteristics.Calculators.AverageRemoteness;
+import IntervalAnalysis.Characteristics.Characteristic;
+import IntervalAnalysis.LinkUp;
+import IntervalAnalysis.UniformChain;
 import org.junit.Before;
 import org.junit.Test;
 

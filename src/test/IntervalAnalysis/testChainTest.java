@@ -1,12 +1,9 @@
-package test.IntervalAnalysis;
+package IntervalAnalysis;
 
-import libiada.IntervalAnalysis.Chain;
-import libiada.IntervalAnalysis.ChainWithCharacteristic;
-import libiada.IntervalAnalysis.UniformChain;
-import libiada.Root.SimpleTypes.ValueChar;
+import Root.SimpleTypes.ValueChar;
+import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
-import junit.framework.TestCase;
 
 /**
  * Created by IntelliJ IDEA.

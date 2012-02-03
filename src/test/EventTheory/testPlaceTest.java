@@ -1,8 +1,6 @@
-package test.EventTheory;
+package EventTheory;
 
 import junit.framework.TestCase;
-import libiada.EventTheory.Dimension;
-import libiada.EventTheory.Place;
 import org.junit.Test;
 
 import java.lang.reflect.Array;

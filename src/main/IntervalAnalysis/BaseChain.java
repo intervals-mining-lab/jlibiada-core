@@ -3,7 +3,6 @@ package IntervalAnalysis;
 import EventTheory.Dimension;
 import EventTheory.Space;
 import Root.BaseObject;
-import Root.IBin;
 
 /**
  * Created by IntelliJ IDEA.
@@ -57,10 +56,6 @@ public class BaseChain extends Space {
 
     public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
-    }
-
-    public IBin GetBin() {
-        return null;  //TODO: "????????? ?????"
     }
 
     public void ClearAndSetNewLength(int length) throws Exception

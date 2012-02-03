@@ -1,7 +1,6 @@
 package EventTheory;
 
 import Root.BaseObject;
-import Root.IBin;
 
 /**
  * Created by IntelliJ IDEA.
@@ -24,10 +23,6 @@ public class PsevdoValue extends BaseObject {
     @Override
     public boolean equals(Object obj) {
         return this.getClass() == obj.getClass();
-    }
-
-    public IBin GetBin() {
-        return null;
     }
 
     @Override

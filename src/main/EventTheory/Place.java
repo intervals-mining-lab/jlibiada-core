@@ -1,8 +1,6 @@
 package EventTheory;
 
 import Root.BaseObject;
-import Root.BaseObject;
-import Root.IBin;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -95,10 +93,6 @@ public class Place extends BaseObject {
     @Override
     public int compareTo(BaseObject object) {
         return 0;  //TODO:"Заполни метод!"
-    }
-
-    public IBin GetBin() {
-        return null;  //TODO: "????????? ?????"
     }
 
     public boolean compatibleTo(Place pattern) throws Exception {

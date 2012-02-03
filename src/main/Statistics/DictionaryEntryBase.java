@@ -1,7 +1,6 @@
 package Statistics;
 
 import Root.BaseObject;
-import Root.IBin;
 
 /**
  * Created by IntelliJ IDEA.
@@ -56,9 +55,5 @@ public class DictionaryEntryBase extends BaseObject {
     @Override
     public int compareTo(BaseObject object) {
         return 0;  //TODO:"Заполни метод!"
-    }
-
-    public IBin GetBin() {
-        return null;  //TODO: "????????? ?????"
     }
 }

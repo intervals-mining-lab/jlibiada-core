@@ -1,7 +1,6 @@
 package Statistics;
 
 import Root.BaseObject;
-import Root.IBin;
 import Root.SimpleTypes.ValueInt;
 import TheoryOfSet.Alphabet;
 
@@ -33,10 +32,6 @@ public class FrequencyList extends Alphabet {
     @Override
     public boolean equals(Object obj) {
         return false;  //TODO: "????????? ?????"
-    }
-
-    public IBin GetBin() {
-        return null;  //TODO: "????????? ?????"
     }
     
     public int getCount() {
